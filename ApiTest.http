@@ -1,0 +1,19 @@
+@localHost = http://localhost:5249
+
+###
+GET {{localHost}}
+
+###
+GET {{localHost}}/Sample
+
+###
+GET {{localHost}}/Sample/TEST
+
+###
+POST {{localHost}}/Sample
+Content-Type: application/json
+
+{
+    "Key1": "TEST 1",
+	"Key2": "TEST 2"
+} 
