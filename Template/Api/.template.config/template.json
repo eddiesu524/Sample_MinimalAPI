@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "identity": "MinimalAPI_EndPoints",
+    "author": "Eddie Su",
+    "classifications": [
+        "Web",
+        "API",
+        "EndPoints"
+    ],
+    "name": "有架構的 Minimal API EndPoints",
+    "shortName": "minimalapi_endpoints",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "ParentProjectNamspace": {
+            "type": "parameter",
+            "replaces": "Sample_MinimalAPI",
+            "dataType": "string",
+            "defaultValue": "Sample_MinimalAPI"
+        },
+        "ClassName": {
+            "type": "parameter",
+            "description": "The name of the code file and class.",
+            "datatype": "text",
+            "replaces": "Template",
+            "fileRename": "Template",
+            "defaultValue": "Template"
+        }
+    }
+}

@@ -109,3 +109,39 @@
 ### 參考
 * https://blog.darkthread.net/blog/organizing-min-api/
 * https://www.tessferrandez.com/blog/2023/10/31/organizing-minimal-apis.html
+
+# 自訂 dotnet new 專案範本
+
+### 範本設定檔
+此範本包含了1個 project 跟2個 item，範本設定檔如下：
+- .template.config\template.json
+-  Template\Api\\.template.config\template.json
+-  Template\DataAccesses\\.template.config\template.json
+
+### 安裝範本
+```sh
+dotnet new install .\
+```
+
+### 解除安裝範本
+```sh
+dotnet new uninstall .\
+```
+
+### 使用方法
+1. 新增專案
+```sh
+dotnet new consoleasync -n <專案名稱>
+```
+
+2. 新增 API EndPoints (新增完後，需再 Program.cs 引用)
+```sh
+cd Models
+dotnet new minimalapi_data_accesses -P <專案名稱> -C <API EndPoints 端點名稱> 
+```
+
+2. 新增 Data Accesses
+```sh
+cd DataAccesses
+dotnet new minimalapi_data_accesses -P <專案名稱> -C <Data Accesses 端點名稱> 
+```

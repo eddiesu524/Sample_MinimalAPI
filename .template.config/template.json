@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "identity": "MinimalAPI",
+    "author": "Eddie Su",
+    "classifications": [
+        "Web",
+        "API"
+    ],
+    "name": "有架構的 Minimal API",
+    "shortName": "minimalapi",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Sample_MinimalAPI",
+    "preferNameDirectory": true,
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "exclude": [
+                        ".vs/**",
+                        ".git/**",
+                        "Template/**"
+                    ]
+                }
+            ]
+        }
+    ]
+}
