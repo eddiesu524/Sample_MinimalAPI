@@ -8,7 +8,7 @@ using static Sample_MinimalAPI.Models.SampleModel;
 
 namespace Sample_MinimalAPI.Models
 {
-    public static class SampleApiExtensions
+    public static class SampleApi
     {
         public static void SampleEndPoints(this WebApplication app)
         {
