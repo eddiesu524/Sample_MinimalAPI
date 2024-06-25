@@ -137,7 +137,7 @@ dotnet new consoleasync -n <專案名稱>
 2. 新增 API EndPoints (新增完後，需再 Program.cs 引用)
 ```sh
 cd Models
-dotnet new minimalapi_data_accesses -P <專案名稱> -C <API EndPoints 端點名稱> 
+dotnet new minimalapi_endpoints -P <專案名稱> -C <API EndPoints 端點名稱> 
 ```
 
 2. 新增 Data Accesses
