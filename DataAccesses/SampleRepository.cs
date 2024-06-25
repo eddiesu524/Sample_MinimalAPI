@@ -10,7 +10,7 @@ namespace Sample_MinimalAPI.DataAccesses
     public class SampleRepository(IConfiguration configuration) : IRepository
     {
         //透過Configuration取得連線字串
-        public string ConnectionString => configuration["DBConnection:Default"];
+        public string ConnectionString => configuration["DBConnection:Sample"];
 
         //透過ConnectionString取得連線
         public IDbConnection Connection
